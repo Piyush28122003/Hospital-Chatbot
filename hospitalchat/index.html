@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="chatbox">
+            <div id="chatlog" class="chatlog"></div>
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Ask me something..." autocomplete="off">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+ -->
+
+
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="hospital-info">
+                <i class="fas fa-hospital-alt"></i>
+                <h1>HealthCare Assistant</h1>
+            </div>
+            <p class="status">Online 24/7</p>
+        </div>
+        <div class="chatbox">
+            <div id="chatlog" class="chatlog">
+                <div class="bot-message">
+                    Hello! I'm your HealthCare Assistant. How can I help you today? You can ask me about:
+                    • Medical services and specialties
+                    • Appointments and consultations
+                    • Emergency services
+                    • Insurance and billing
+                    • General hospital information
+                </div>
+            </div>
+            <div class="input-container">
+                <button class="quick-actions" id="quick-actions">
+                    <i class="fas fa-list"></i>
+                </button>
+                <input type="text" id="user-input" placeholder="Type your health-related query..." autocomplete="off">
+                <button onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+        <div id="quick-menu" class="quick-menu hidden">
+            <button onclick="quickAction('emergency')">🚑 Emergency Info</button>
+            <button onclick="quickAction('appointment')">📅 Book Appointment</button>
+            <button onclick="quickAction('departments')">👨‍⚕️ Our Departments</button>
+            <button onclick="quickAction('insurance')">💳 Insurance</button>
+            <button onclick="quickAction('contact')">📞 Contact Us</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
